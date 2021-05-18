@@ -8,7 +8,7 @@ from utils.config_loader import config
 
 logger = logging.getLogger(__name__)
 
-
+'''
 def restricted(func):
     @wraps(func)
     def wrapped(update, context, *args, **kwargs):
@@ -65,7 +65,7 @@ def restricted_private_and_group(func):
         return func(update, context, *args, **kwargs)
     return wrapped
 
-
+'''
 def restricted_group_only(func):
     @wraps(func)
     def wrapped(update, context, *args, **kwargs):
